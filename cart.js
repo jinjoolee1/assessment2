@@ -39,7 +39,7 @@ const summedPrice = cart.reduce((temp, x) => {
     return temp + x.price;
 }, 0)
 
-console.log(sum)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
