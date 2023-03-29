@@ -90,6 +90,12 @@ console.log(calcFinalPrice(35.99, 2.25, .08));
 
 /*
     TEXT ANSWER HERE
+1. First, we'll need a user ID to identifty each customer. 
+2. We will then need an item list to store the details of each item present in the customer's cart.
+3. An address to be stored, where the delivery will be delivered to.
+4. Promo code. If the user has a promo code for a discount, we will need to store that information as well.
+5. Free offer items (such as buy one get one, 2 for 1, x dollars off with purchase of x dollars or more), details of any free items provided with an offer where payment is not required.
+6. Payment method.
 
 */
 
@@ -99,3 +105,11 @@ console.log(calcFinalPrice(35.99, 2.25, .08));
 */
 
 //CODE HERE
+let customer = {
+    name: "John Doe",
+    userID: "JohnDoe1234",
+    address: "123 Main Street",
+    phone: "5555555555",
+    promocode: "TRYME",
+    
+}
