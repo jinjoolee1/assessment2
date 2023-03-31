@@ -20,8 +20,17 @@
 */
 
 //CODE HERE
+class Employee {
 
-
+    constructor(name, shifts) {
+    this.name = name;
+    this.shifts = shifts;
+    }
+    
+    getSchedule() {
+    console.log(this.name + "works on" + this.shifts)
+    }
+}
 
 /*
     Create a new instance of your class.
@@ -34,6 +43,9 @@
 */
 
 //CODE HERE
+var empOne = new Employee("Jess", "Weekday mornings", "weekday afternoons");
+empOne.getSchedule()
+
 
 /*
     Call the `getSchedule` method on the
