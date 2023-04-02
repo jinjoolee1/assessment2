@@ -22,8 +22,11 @@
 */
 
 //CODE HERE
+const greetUser = (username) => {
+    return `Welcome back, ${username}`
+}
 
-
+console.log(greetUser('Andrew'));
 
 
 
@@ -50,7 +53,12 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-
+function canWeDeliver (zipCode) {
+    if (zipCode === "deliveryAreaZipCodes") { 
+    return "You're in our delivery zone!" 
+    } else if (zipcode !== "deliveryAreaZipcodes")
+    return "Sorry, we can't deliver to that address"
+    }     
 
 
 /* 
