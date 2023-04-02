@@ -53,7 +53,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+getSchedule.empOne(Jess)
 
 /*
     Make a copy of the empOne object
@@ -68,7 +68,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+const empTwo = 
 
 
 //////////////////PROBLEM 2////////////////////

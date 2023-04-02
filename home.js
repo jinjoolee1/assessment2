@@ -53,14 +53,18 @@ console.log(greetUser('Andrew'));
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-function canWeDeliver (zipCode) {
-    if (zipCode === "deliveryAreaZipCodes") { 
-    return "You're in our delivery zone!" 
-    } else if (zipcode !== "deliveryAreaZipcodes")
-    return "Sorry, we can't deliver to that address"
-    }     
-
-
+function canWeDeliver(zipCode) {
+    const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206];
+  
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+      return "You're in our delivery zone!";
+    } else {
+      return "Sorry, we can't deliver to that address";
+    }
+  }
+       
+console.log(canWeDeliver(85205))
+console.log(canWeDeliver(55417))
 /* 
     Problem 2 Continued
 
