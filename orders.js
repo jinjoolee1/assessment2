@@ -66,3 +66,4 @@ new Ticket(20, "12345", "678").updateStatus("done");
 */
 
 //CODE HERE
+new Ticket(20, "12345", "678").updateStatus("cooking");
