@@ -165,6 +165,19 @@ let fries = {
 */
 
 //CODE HERE
+
+filterFood = (array, tags) => {
+    let result = [] 
+    array.forEach(element => {
+        tags.forEach(tags => {
+            if (tags == tags)
+                result.push(element)
+        });
+    });
+    return result
+}
+
+
 let result = []
 result = filterFood(foodArr, 'side');
 
