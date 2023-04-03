@@ -83,6 +83,9 @@ console.log(pizza.price)
 */
 
 //CODE HERE
+const {category} = pizza
+console.log(pizza.category)
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -98,7 +101,55 @@ console.log(pizza.price)
 */
 
 //CODE HERE
+var foodArr = ['burger', 'salad', 'cheesy bread', 'chicken wings', 'fries']
 
+let burger = {
+    name: "burger",
+    price: "$12.00",
+    category: "Entree",
+    popularity: "4",
+    rating: "5",
+    tags: "burger, pizza, entree, kids, popular" 
+
+}
+
+let salad = {
+    name: "salad",
+    price: "$8.00",
+    category: "Side",
+    popularity: "5",
+    rating: "5",
+    tags: "salad, appetizer, side, popular" 
+
+}
+
+let bread = {
+    name: "cheesy bread",
+    price: "$5.00",
+    category: "Appetizer",
+    popularity: "1",
+    rating: "5",
+    tags: "cheesy, bread, appetizer, kids, popular" 
+
+}
+let wings = {
+    name: "chicken wings",
+    price: "$16.00",
+    category: "Appetizer",
+    popularity: "3",
+    rating: "5",
+    tags: "chicken, wings, appetizer, popular" 
+
+}
+let fries = {
+    name: "fries",
+    price: "$5.00",
+    category: "Side",
+    popularity: "6",
+    rating: "5",
+    tags: "fries, side, appetizer, kids, popular" 
+
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -114,9 +165,13 @@ console.log(pizza.price)
 */
 
 //CODE HERE
+let result = []
+result = filterFood(foodArr, 'side');
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+if (result.length > 0)
+    console.log(result);
+else
+    console.log("No item found for the given tag");
 
 
 //////////////////PROBLEM 5////////////////////
