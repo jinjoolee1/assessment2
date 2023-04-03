@@ -33,9 +33,9 @@
 class Ticket {
 
     constructor(items, orderTime, customerId) {
-        this.items = items;
-        this.orderTime = orderTime;
-        this.customerId = customerId;
+        this.items = items
+        this.orderTime = orderTime
+        this.customerId = customerId
     }
 
     updateStatus(newStatus) {
@@ -57,6 +57,8 @@ new Ticket(20, "12345", "678").updateStatus("done");
 */
 
 //CODE HERE
+
+const firstTicket = new Ticket('pizza, bread and soda', '7:03PM', '575')
 
 
 /*
