@@ -31,7 +31,15 @@
 */
 
 //CODE HERE
+let pizza = {
+    name: "Pepperoni",
+    price: "$15.00",
+    category: "Entree",
+    popularity: "2",
+    rating: "5",
+    tags: "pepperoni, pizza, entree, kids, popular" 
 
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)  
 
 /*
     Second, log the second tag in your pizza's
@@ -53,8 +61,8 @@
 */
 
 //CODE HERE
-
-
+console.log(pizza.popularity)  
+console.log(pizza['popularity'])
 /*
     Third, destructure the price off of the
     pizza object.
@@ -63,6 +71,8 @@
 */
 
 //CODE HERE
+const {price} = pizza
+console.log(pizza.price)
 
 
 /*
