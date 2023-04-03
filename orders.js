@@ -30,8 +30,20 @@
 */
 
 //CODE HERE
+class Ticket {
 
+    constructor(items, orderTime, customerId) {
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
+    }
 
+    updateStatus(newStatus) {
+        this.status = newStatus;
+        console.log(`The order for customer [${this.customerId}] is now [${this.status}].`)
+    }
+}
+new Ticket(20, "12345", "678").updateStatus("done");
 
 /*
     Create a new instance of your class.
