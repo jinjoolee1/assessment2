@@ -68,8 +68,7 @@ getSchedule.empOne(Jess)
 */
 
 //CODE HERE
-const empTwo = 
-
+var empTwo = new Employee("Nick");
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -95,7 +94,33 @@ const empTwo =
 */
 
 //CODE HERE
-
+class Employee {
+    constructor(name, title, salary) {
+      this.name = name;
+      this.title = title;
+      this.salary = salary;
+    }
+  }
+  
+  class Manager extends Employee {
+    constructor(name, title, salary, employees) {
+      super(name, title, salary);
+      this.employees = employees;
+    }
+  
+    getEmployees() {
+      console.log(`${this.name} manages ${this.employees}`);
+    }
+  
+    addEmployee(emp) {
+      this.employees.push(emp);
+    }
+  }
+  const manager = new Manager('John', 'Manager', 100000, ['Alice', 'Bob', 'Charlie']);
+  manager.getEmployees();
+  manager.addEmployee('Dave');
+  console.log(manager.employees);
+  
 
 
 /*
@@ -110,7 +135,10 @@ const empTwo =
 */
 
 //CODE HERE
-
+const manager = new Manager('Winston', 'Manager');
+manager.getEmployees();
+manager.addEmployee('Cece', 'Schmidt');
+console.log(manager.employees);
 
 /*
     Call the `getEmployees` method on the
